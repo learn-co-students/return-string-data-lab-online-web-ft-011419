@@ -17,6 +17,7 @@ group :development, :test do
   gem 'rack_session_access'
   gem "capybara"
   gem "poltergeist"
+  gem "phantomjs"
   gem "database_cleaner"
   gem "pry-byebug"
   gem "rspec-rails"
