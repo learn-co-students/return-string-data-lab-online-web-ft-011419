@@ -1,1 +1,9 @@
-
+<div>
+  <%= form_for @product, url: {action: "create"} do |f| %>
+    <p>Name: <%= f.text_field :name %></p>
+    <p>Price: <%= f.number_field :price %></p>
+    <p>Description: <%= f.text_area :description %></p>
+    <p>Inventory: <%= f.number_field :inventory %></p>
+    <%= f.submit "Create" %>
+  <% end %>
+</div>
