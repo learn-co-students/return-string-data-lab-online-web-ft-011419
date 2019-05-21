@@ -1,1 +1,11 @@
+<h1>Add Products Here</h1>
 
+<%= form_for @product, url: {action: "create"} do |p| %>
+<tr>
+    <td>Name: <%= p.text_field :name %></td><br>
+    <td>Description: <%= p.text_area :description %></td><br>
+    <td>Price: <%= p.number_field :price %></td><br>
+    <td>Inventory: <%= p.number_field :inventory %></td><br>
+</tr>
+<%= p.submit %>
+<%end%>
